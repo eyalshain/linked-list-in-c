@@ -31,12 +31,14 @@ void set_value(Node *list, int x)
     list->value = x;
 }
 
-void insert_middle(Node **list, int x, Node *Next)
+void insert_middle(Node **list, int x)
 {
-    Node *list2 = malloc(sizeof(Node));
-    list2->value = x;
-    list2->Next = Next;
-    (*list)->Next = list2;
+    Node *new_node = malloc(sizeof(Node));
+    new_node->value = x;
+    // list2->Next = Next;
+    // (*list)->Next = list2;
+    new_node->Next = (*list)->Next;
+    (*list)->Next = new_node; 
     
 }
 

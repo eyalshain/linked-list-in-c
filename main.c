@@ -21,11 +21,11 @@ int main (void) {
     
     
 
-    insert_middle(&list2, 10, list2->Next);
+    insert_middle(&list2, 10);
     print_values(list2);    // 2 -> 10 -> 6 -> null
     insert_end(&list2, 1);  // 2 -> 10 -> 6 -> 1 -> null
     print_values(list2);
-    insert_start(&list2, 0);
+    insert_start(&list2, 0);  // 0 -> 2 -> 10 -> 6 -> 1 -> null
     print_values(list2);
 
 
