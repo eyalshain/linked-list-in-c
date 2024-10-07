@@ -53,3 +53,12 @@ void insert_end(Node **list, int x)
     }
     curr->Next = new_node;
 }
+
+void insert_start(Node **list, int x)
+{
+    Node *new_node = malloc(sizeof(Node));
+    new_node->value = x;
+    new_node->Next = (*list);
+    *list = new_node;
+
+}
