@@ -165,7 +165,7 @@ void remove_duplicates(Node **list, int x)
 {
     int count = search(*list, x); //count = how many times x appear in the list
 
-    for (int i = 0l; i < count - 1; i++) // we want to remove all duplicates, but keep at least one element of x.
+    for (int i = 0; i < count - 1; i++) // we want to remove all duplicates, but keep at least one element of x.
     {
         remove_element(list, x);
     }
